@@ -1,0 +1,1071 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: "border-box";
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: #080808;
+  --secondary-color: #edf2fc;
+  --ternary-color: #484747;
+  --fourth-color: #d4d1d1;
+}
+.dark-mode {
+  --primary-color: #fff;
+  --secondary-color: #000106;
+  --ternary-color: #c4c2c2;
+  --fourth-color: #c5b9b9;
+}
+#darkmode-icon {
+  margin-left: 20px;
+  width: 30px;
+  cursor: pointer;
+}
+body {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+#body {
+  width: 100%;
+  height: 100vh;
+}
+#root header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+#logo {
+  padding: 10px;
+  color: #ff0800;
+  font-size: 50px;
+}
+
+nav {
+  background-color: var(--ternary-color);
+  border: 1px solid var(--ternary-color);
+  padding: 15px 10%;
+  margin-top: -10px;
+  margin-left: -10px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.header {
+  margin-top: 200px;
+}
+#home {
+  scroll-margin-top: 195px;
+}
+.header-text {
+  color: var(--secondary-color);
+  margin-top: 100px;
+  margin-left: 75px;
+  font-size: x-large;
+  padding: 20px;
+  display: flex;
+  gap: 350px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.intro {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#ht1 {
+  color: aqua;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile {
+  width: 230px;
+  height: 230px;
+  border: 5px solid var(--secondary-color);
+  border-radius: 150px;
+  border-color: rgb(114, 114, 229);
+  object-fit: cover;
+}
+.objective {
+  margin-left: 100px;
+  margin-right: 550px;
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+#hire-me {
+  background-color: #0078d4; /* Microsoft's primary blue */
+  color: var(--secondary-color);
+  padding: 10px 20px; /* Adjust as needed */
+  border: none;
+  border-radius: 23px; /* Rounded corners */
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 26px; /* Or choose your desired font size */
+  cursor: pointer;
+  transition: all 0.2s ease; /* Smooth hover effects */
+  display: inline-block;
+  margin-left: 155px;
+}
+#hire-me:hover {
+  background-color: #007bff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+/*---About----*/
+#about {
+  padding: 80px 0;
+  color: var(--secondary-color);
+  scroll-margin-top: 40px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 {
+  flex-basis: 35%;
+}
+.about-col-1 img {
+  margin-top: 40px;
+  margin-left: 70px;
+  width: 230px;
+  height: 230px;
+  border: 5px solid var(--secondary-color);
+  border-radius: 150%;
+  border-color: aquamarine;
+}
+#resume-btn {
+  background-color: #0078d4; /* Microsoft's primary blue */
+  color: var(--secondary-color);
+  padding: 10px 20px; /* Adjust as needed */
+  border: none;
+  border-radius: 23px; /* Rounded corners */
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 22px; /* Or choose your desired font size */
+  cursor: pointer;
+  transition: all 0.2s ease; /* Smooth hover effects */
+  display: block;
+  margin: 70px 0 0 80px;
+}
+#resume-btn:hover {
+  background-color: #007bff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+.sub {
+  color: #0078d4;
+  text-align: center;
+  margin-left: -135px;
+  margin-top: 10px;
+}
+.heading {
+  margin: 20px 0 20px 0;
+  color: #0078d4;
+}
+.paragraph {
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+/*---Skill----*/
+.skill {
+  margin-top: -20px;
+  color: #0078d4;
+  text-align: center;
+}
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.skill-card {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: var(--primary-color);
+  transition: transform 0.2s ease;
+}
+.skill-card:hover {
+  box-shadow: var(--primary-color);
+  transform: scale(1.05);
+}
+.skill-icon {
+  padding-left: 30px;
+  width: 50px;
+  height: 60px;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.icon.invert {
+  filter: invert(100%);
+}
+.skill-name {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--primary-color);
+}
+/*---Resume----*/
+#resume {
+  scroll-margin-top: 100px;
+}
+.res {
+  color: #0078d4;
+  text-align: center;
+  margin-top: 100px;
+}
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.col-1 {
+  flex-basis: 50%;
+}
+.col-2 {
+  flex-basis: 50%;
+}
+.education {
+  color: #0078d4;
+  margin-left: 130px;
+  margin-top: 40px;
+  font-size: 30px;
+}
+.edu {
+  margin-top: 40px;
+  margin-left: 130px;
+}
+.mca {
+  background-color: var(--ternary-color);
+  margin-bottom: 25px;
+  width: 85%;
+  border: 2px solid rgb(130, 143, 139);
+  border-radius: 50px;
+  box-shadow: var(--primary-color);
+  padding: 30px 0 30px 30px;
+  transition: 0.3s ease;
+}
+.mca:hover {
+  background-color: var(--ternary-color);
+  box-shadow: var(--primary-color);
+  transform: scale(1.05);
+}
+.degree {
+  font-size: 25px;
+}
+.cllg {
+  font-size: 25px;
+  color: #007bff;
+  margin-top: 15px;
+}
+.date {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.location {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.sheet {
+  margin-top: 10px;
+  background-color: #0078d4; /* Microsoft's primary blue */
+  color: var(--secondary-color);
+  padding: 10px 20px; /* Adjust as needed */
+  border: none;
+  border-radius: 23px; /* Rounded corners */
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 20px; /* Or choose your desired font size */
+  cursor: pointer;
+  transition: all 0.2s ease; /* Smooth hover effects */
+  display: inline-block;
+  margin-left: 155px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.sheet:hover {
+  background-color: #2e55c1;
+  box-shadow: var(--primary-color);
+  transform: scale(1.05);
+}
+.certificate {
+  color: #0078d4;
+  text-align: justify;
+  margin-top: 40px;
+  font-size: 30px;
+}
+.certificate-name {
+  margin-top: 40px;
+  background-color: var(--ternary-color);
+  margin-bottom: 25px;
+  width: 75%;
+  border: 2px solid var(--ternary-color);
+  border-radius: 50px;
+  box-shadow: 0 4px 10px var(--ternary-color);
+  padding: 30px 0 30px 30px;
+  transition: 0.3s ease;
+}
+.certificate-name:hover {
+  background-color: var(--ternary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+.ctf {
+  font-size: 25px;
+}
+.from {
+  font-size: 25px;
+  color: #007bff;
+  margin-top: 15px;
+}
+.ctf-btn {
+  margin-top: 30px;
+  background-color: #0078d4; /* Microsoft's primary blue */
+  color: var(--secondary-color);
+  padding: 10px 20px; /* Adjust as needed */
+  border: none;
+  border-radius: 23px; /* Rounded corners */
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 20px; /* Or choose your desired font size */
+  cursor: pointer;
+  transition: all 0.2s ease; /* Smooth hover effects */
+  display: inline-block;
+  margin-left: 165px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.ctf-btn:hover {
+  background-color: #2e55c1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+/*---My Project---*/
+#myProject {
+  scroll-margin-top: 100px;
+}
+.project h1 {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  color: #0078d4;
+  text-align: center;
+}
+.grid {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.project-grid {
+  margin-top: 40px;
+  background-color: var(--ternary-color);
+  margin-bottom: 25px;
+  width: 75%;
+  border: 2px solid rgb(130, 143, 139);
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(174, 161, 161, 0.1);
+  padding: 30px 0 30px 30px;
+  transition: 0.3s ease;
+}
+.project-grid:hover {
+  background-color: var(--ternary-color);
+  box-shadow: 0 4px 12px var(--ternary-color);
+  transform: scale(1.05);
+}
+.project-grid img {
+  width: 90%;
+  height: 230px;
+  background-size: contain;
+  border-radius: 15%;
+}
+.project-grid h3 {
+  color: #0078d4;
+  font-size: 25px;
+  margin: 10px 10px;
+}
+.date {
+  font-size: 18px;
+  margin-left: 12px;
+}
+.project-grid ul {
+  display: inline-block;
+  margin: 10px 20px;
+}
+.tech-item {
+  display: block;
+  font-size: 20px;
+  color: #007bff;
+  margin-top: 10px;
+  background-color: var(--ternary-color); /* Microsoft's primary blue */
+  color: #0078d4;
+  padding: 10px 20px; /* Adjust as needed */
+  border: none;
+  border-radius: 23px; /* Rounded corners */
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 20px; /* Or choose your desired font size */
+  transition: all 0.2s ease; /* Smooth hover effects */
+  display: inline-block;
+  transition: 0.2s ease;
+}
+.gitHub {
+  margin-top: 30px;
+  background-color: #0078d4; /* Microsoft's primary blue */
+  color: var(--secondary-color);
+  padding: 10px 20px; /* Adjust as needed */
+  border: none;
+  border-radius: 23px; /* Rounded corners */
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 20px; /* Or choose your desired font size */
+  cursor: pointer;
+  transition: all 0.2s ease; /* Smooth hover effects */
+  display: inline-block;
+  margin-left: 65px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.gitHub img {
+  border-radius: 50%;
+}
+/*----Contact Me----*/
+#contact {
+  scroll-margin-top: 100px;
+}
+#contact h1 {
+  margin-top: 200px;
+  margin-bottom: 75px;
+  color: #0078d4;
+  text-align: center;
+}
+.col2 {
+  display: flex;
+}
+.row2a {
+  flex-basis: 50%;
+}
+.row2b {
+  flex-basis: 50%;
+}
+.contact-item {
+  display: flex;
+  background-color: #fff;
+  margin-left: 130px;
+  margin-bottom: 25px;
+  width: 65%;
+  border: 2px solid rgb(130, 143, 139);
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(174, 161, 161, 0.1);
+  padding: 30px 0 30px 30px;
+  transition: 0.3s ease;
+}
+.contact-item:hover {
+  background-color: var(--ternary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+.contact-item img {
+  color: #0078d4;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.contact-text h3 {
+  font-size: 25px;
+  color: black;
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+.contact-text a {
+  color: black;
+  margin-left: 35px;
+  font-size: 15px;
+}
+.contact-text a:hover {
+  color: #007bff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+.tesm {
+  display: block;
+}
+.name {
+  display: block;
+  color: var(--secondary-color);
+  font-size: 25px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.input {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 65%;
+  height: 20px;
+  border: 2px solid rgb(130, 143, 139);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(174, 161, 161, 0.1);
+  padding: 10px 10px 10px 10px;
+  transition: 0.3s ease;
+}
+#submit {
+  background-color: #0078d4; /* Microsoft's primary blue */
+  color: var(--secondary-color);
+  padding: 10px 20px; /* Adjust as needed */
+  border: none;
+  border-radius: 23px; /* Rounded corners */
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 20px; /* Or choose your desired font size */
+  cursor: pointer;
+  transition: all 0.2s ease; /* Smooth hover effects */
+  display: inline-block;
+  margin-left: 35px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  transition: transform 0.2s ease;
+}
+#submit:hover {
+  background-color: #007bff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+.input-message {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 65%;
+  border: 2px solid rgb(130, 143, 139);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(174, 161, 161, 0.1);
+  padding: 10px 10px 10px 10px;
+  transition: 0.3s ease;
+}
+/*---Footer---*/
+.copyright {
+  margin-top: 130px;
+  text-align: center;
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+
+/*---css for small screen---*/
+
+.cross {
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+.menu {
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url();
+  }
+  nav {
+    height: 100px;
+  }
+  #logo {
+    margin-top: 10px;
+    font-size: 75px;
+  }
+  nav .dark-mode {
+    margin-right: -180px;
+  }
+  nav .menu {
+    display: block;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 200vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+    font-size: 100px;
+  }
+  nav ul li a {
+    padding: 20px;
+    font-size: 50px;
+  }
+  nav ul .cross {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .header-text {
+    display: block;
+  }
+  /*....About Me....*/
+  #about {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about h1 {
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 img {
+    margin-bottom: 50px;
+    margin-left: 200px;
+    width: 370px;
+    height: 370px;
+    border: 5px solid var(--secondary-color);
+    border-radius: 260%;
+    border-color: aquamarine;
+  }
+  #resume-btn {
+    width: 100%;
+    height: 7vh;
+    margin-left: 120px;
+    margin-bottom: 50px;
+  }
+  .heading {
+    margin-left: 20px;
+    font-size: 42px;
+  }
+  .paragraph {
+    margin-left: 20px;
+    margin-right: -100px;
+    font-size: 36px;
+  }
+  .skill {
+    margin-left: 250px;
+    margin-right: -30px;
+    font-size: 36px;
+  }
+  .skill-grid {
+    width: 200%;
+    height: 35vh;
+    margin-left: 100px;
+  }
+  /*....Resume....*/
+  #resume {
+    scroll-margin-top: 125px;
+  }
+  .col-1,
+  .col-2 {
+    flex-basis: 100%;
+  }
+  .res {
+    font-size: 50px;
+    margin-left: 260px;
+    margin-right: -110px;
+  }
+  .education {
+    font-size: 36px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+  .mca {
+    width: 180%;
+    height: 25vh;
+  }
+  .mca,
+  .marksheet {
+    margin-top: 20px;
+  }
+  .certificate {
+    font-size: 36px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+  .certificate-name {
+    width: 145%;
+    height: 20vh;
+    margin-left: 90px;
+  }
+  .certificate,
+  .ctf-btn {
+    width: 40%;
+    height: 7vh;
+  }
+  /*.....my project....*/
+  #myProject {
+    scroll-margin-top: 125px;
+  }
+  .project h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-left: 270px;
+    margin-right: -100px;
+  }
+  .grid {
+    display: block;
+    width: 170%;
+    margin-left: 100px;
+    margin-bottom: -100px;
+  }
+  .gitHub {
+    width: 60%;
+  }
+  /*....contact me....*/
+  .contact-me {
+    font-size: 50px;
+    margin-left: 220px;
+    margin-right: -80px;
+  }
+  .col2 {
+    display: block;
+  }
+  .contact-item {
+    margin-left: 55px;
+    width: 160%;
+    height: fit-content;
+    gap: 20px;
+  }
+  #contactForm {
+    width: 190%;
+    text-align: left;
+    margin-top: 30%;
+    margin-left: 35px;
+  }
+  .input{
+    font-size: 32px;
+  }
+  /*....footer me....*/
+  .copyright {
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: -180px;
+    margin-bottom: 20px;
+  }
+}
+/* -----------------------------------------------Media---------------------------------------------- */
+
+.cross {
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+.menu {
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+@media only screen and (max-width: 430px) {
+  body {
+    overflow-x: hidden;
+    margin-left: 5%;
+  }
+
+  .container2,
+  .row,
+  .row-2,
+  .col2 {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #root header{
+    width: 37.5vh;
+  }
+  nav {
+    width: 430px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #logo {
+    font-size: 32px;
+  }
+  #darkmode-icon {
+    margin-right: -80px;
+  }
+  .menu{
+    margin-right: 15%;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -10;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+    font-size: 24px;
+  }
+  nav ul li a {
+    padding: 20px;
+    font-size: 24px;
+  }
+  nav ul .cross {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .header {
+    margin-top: 120px;
+    padding: 0 20px;
+  }
+
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .intro {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .profile-photo {
+    text-align: center;
+  }
+
+  .profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .objective {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 20px;
+    margin: 30px auto;
+    max-width: 90%;
+  }
+
+  #hire-me {
+    margin: 0 auto 30px auto;
+    display: block;
+    font-size: 18px;
+    padding: 10px 25px;
+  }
+  #about h1 {
+    font-size: 32px;
+    margin-left: 1%;
+  }
+
+  .container,
+  .container2 {
+    width: 90%;
+    padding: 0 15px;
+  }
+
+  .row,
+  .row-2,
+  .col2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-col-1 img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin: 0;
+    margin-left: 10%;
+  }
+  #resume-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .paragraph {
+    font-size: 16px;
+    text-align: left;
+    padding: 0 20px;
+    margin: 30px auto;
+    max-width: 90%;
+  }
+  .tab-titles {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .skill {
+    font-size: 28px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .skill-grid {
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    gap: 15px;
+    margin-bottom: 50%;
+  }
+  .res {
+    font-size: 32px;
+    align-items: center;
+    margin: 0;
+  }
+  .education {
+    font-size: 24px;
+    margin: 0;
+  }
+  .edu {
+    margin-left: 0;
+  }
+  .mca {
+    width: 70%;
+    height: 35vh;
+    margin-left: 10%;
+  }
+  .degree {
+    font-size: 24px;
+  }
+  .cllg {
+    font-size: 18px;
+  }
+  .date {
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .location {
+    font-size: 14px;
+  }
+  .marksheet {
+    margin: 0;
+  }
+  .marksheet .sheet {
+    margin-left: 15%;
+  }
+
+  .certificate {
+    margin-left: 25%;
+    text-align: center;
+    font-size: 32px;
+  }
+  .certificate-name {
+    width: 90%;
+    margin-left: 0;
+  }
+  .ctf {
+    font-size: 18px;
+  }
+  .from {
+    font-size: 14px;
+  }
+  .ctf-btn {
+    margin-left: 15%;
+    width: 50%;
+  }
+
+  .project h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  .grid {
+    width: 43.5vh;
+    margin-left: 0;
+    align-items: center;
+  }
+  .project-grid {
+    width: 90%;
+  }
+  .gitHub {
+    margin-left: 15%;
+  }
+  #contact {
+    align-items: center;
+    text-align: center;
+  }
+  .contact-me {
+    font-size: 32px;
+    margin: 0;
+  }
+  .row2a {
+    margin: 0;
+  }
+  .contact-item {
+    margin-left: 0;
+    width: 90%;
+    gap: 0%;
+  }
+  #contactForm {
+    width: 50vh;
+    margin-left: 0;
+  }
+  .contact-text{
+    text-align: left;
+  }
+  .tesm {
+    margin: 0;
+    width: 100%;
+  }
+
+  .copyright {
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}

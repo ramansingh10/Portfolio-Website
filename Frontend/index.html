@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Potfolio</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div id="root">
+        <header>
+            <nav>
+                <h1 id="logo">Raman.</h1>
+                <ul id="sideMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#myProject">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img id="closeMenu" class="cross" src="svg/xmark-solid.svg" alt="cross">
+                </ul>
+                <img src="svg/sun-solid.svg" alt="moon" id="darkmode-icon" class="dark-mode">
+                <img id="openMenu" class="menu" src="svg/bars-solid.svg" alt="bar">
+            </nav>
+        </header>
+        <div id="home">
+            <div class="header">
+                <div class="header-text">
+                    <div>
+                        <h1 class="intro">Aspiring<br>
+                            <span id=ht1>Software Developer</span><br>
+                            <span id=ht2>Crafting Digital Solution.</span>
+                        </h1>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="Images/converted_image_2.png" alt="profile-photo" class="profile">
+                    </div>
+                </div>
+                <p class="objective">Passionate about building innovative and responsive
+                    website with expertise in HTML, java Script, CSS, Talwind CSS and
+                    React. Ready to transform notions into reality.</p>
+                <button id="hire-me">Hire Me</button>
+            </div>
+        </div>
+        <!----About-->
+        <div id="about">
+            <h1 class="sub">About Me</h1>
+            <div class="container2">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/converted_image3.png">
+                        <button id="resume-btn">View Full Resume</button>
+                        <div id="pdfContainer" style="margin-top: 20px;"></div>
+                    </div>
+                    <div class="about-col-2">
+
+                        <h2 class="heading">Hello, This is Raman Kumar Singh.</h2>
+                        <p class="paragraph">To obtain a challenging position as a Software Developer where I can
+                            leverage my technical skills and passion for
+                            software development to contribute to the growth of the organization while continuing to
+                            learn and improveabilities
+                            Seeking an opportunity to collaborate with experienced professionals and drive success in a
+                            dynamic software
+                            development environment.<br><br>
+                            Seeking a Full Stack Developer position at your company, where my software development and
+                            problem-solving
+                            skills will support your mission of delivering innovative IT services and consulting
+                            solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Skill-->
+        <div class="tab-titles">
+            <h1 class="skill">My Skills</h1>
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><img class="icon" src="svg/html5-brands.svg"></div>
+                    <div class="skill-name">HTML</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img class="icon" src="svg/js-brands.svg"></div>
+                    <div class="skill-name">Java Script</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img class="icon" src="svg/css-brands.svg"></div>
+                    <div class="skill-name">CSS</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img class="icon" src="svg/react-brands.svg"></div>
+                    <div class="skill-name">React</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img class="icon" src="svg/java-brands.svg"></div>
+                    <div class="skill-name">JAVA</div>
+                </div>
+            </div>
+        </div>
+        <!--My Resume-->
+        <div id="resume">
+            <h1 class="res">My Resume</h1>
+            <div class="row-2">
+                <div class="col-1">
+                    <div>
+                        <h2 class="education">Education</h2>
+                    </div>
+                    <div class="edu">
+                        <div class="mca">
+                            <div class="degree">Master Of Computer Application(MCA)</div>
+                            <div class="cllg">Atria Institute of Technology</div>
+                            <div class="date">11/2022-10/2024</div>
+                            <div class="location">Bangalore</div>
+                            <div class="marksheet"><button id="mca-marksheet" class="sheet">Marksheet</button></div>
+                        </div>
+                        <div class="mca">
+                            <div class="degree">Bachlore Of Computer Application(BCA)</div>
+                            <div class="cllg">Trident Institude of Creative Technology</div>
+                            <div class="date">9/2019-4/2022</div>
+                            <div class="location">Bhubaneshwar</div>
+                            <div class="marksheet"><button id="bca-marksheet" class="sheet">Marksheet</button></div>
+                        </div>
+                        <div class="mca">
+                            <div class="degree">Intermediate</div>
+                            <div class="cllg">Modern Public School</div>
+                            <div class="date">5/2019</div>
+                            <div class="location">Balasore</div>
+                            <div class="marksheet"><button id="inter-marksheet" class="sheet">Marksheet</button></div>
+                        </div>
+                        <div class="mca">
+                            <div class="degree">Matriculation</div>
+                            <div class="cllg">Modern Public School</div>
+                            <div class="date">4/2017</div>
+                            <div class="location">Balasore</div>
+                            <div class="marksheet"><button id="matric-marksheet" class="sheet">Marksheet</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h2 class="certificate">Certificate</h2>
+                    <div class="certificate-name">
+                        <div class="ctf">Internship in Web Development</div>
+                        <div class="from">Edu Phoenix Solution</div>
+                        <button id="eduphoenix" class="ctf-btn">Certificate</button>
+                    </div>
+                    <div class="certificate-name">
+                        <div class="ctf">MERN Stack</div>
+                        <div class="from">Algo Camp by Sanket Singh</div>
+                        <button id="mern" class="ctf-btn">Certificate</button>
+                    </div>
+                    <div class="certificate-name">
+                        <div class="ctf">NPTEL in DBMS</div>
+                        <div class="from">NPTEL</div>
+                        <button id="nptel" class="ctf-btn">Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---My Project--->
+        <div id="myProject">
+            <div class="project">
+                <h1>My Project</h1>
+            </div>
+            <div class="grid">
+                <div class="project-grid">
+                    <img src="project-image/gemini-clone.png" alt="game-image">
+                    <h3>Gemini-Clone</h3>
+                    <span class="date">2025 | Bangalore, India</span>
+                    <ul>
+                        <li>Build a Gemini-CLone, which works same as original
+                            and can answer all your questions.</li><br>
+                        <li>Added some extra features like DARKMODE and user caan login and data are stored in the Local
+                            Storage.</li>
+                    </ul>
+                    <span class="tech-item">React</span>
+                    <span class="tech-item">CSS</span>
+                    <span class="tech-item">Tailwind CSS</span>
+                    <button id="gemini-clone" class="gitHub">
+                        <img src="project-image/images.png" alt="icon"
+                            style="width: 20px; height: 20px; vertical-align: middle;">
+                        GitHub Link
+                    </button>
+                </div>
+                <div class="project-grid">
+                    <img src="project-image/air-quality-index-used-by-600nw-2429569893.webp" alt="game-image">
+                    <h3>Air Quality Prediction Based on Machine Learning.</h3>
+                    <span class="date">2024 | Bangalore, India</span>
+                    <ul>
+                        <li>Build a web based Air Quality Prediction, where you can predict the quality of air.
+                        </li><br>
+                        <li>Structured modular, maintainable codebases to enhance scalability, allowing seamless
+                            addition of new games and features in the future</li>
+                    </ul>
+                    <span class="tech-item">Python</span>
+                    <span class="tech-item">React App</span>
+                    <span class="tech-item">Random Forest Algorithm</span>
+                    <button id="aqi" class="gitHub">
+                        <img src="project-image/images.png" alt="icon"
+                            style="width: 20px; height: 20px; vertical-align: middle;">
+                        GitHub Link
+                    </button>
+                </div>
+                <div class="project-grid">
+                    <img src="project-image/snake.png" alt="game-image">
+                    <h3>Snake Game</h3>
+                    <span class="date">2024 | Bangalore, India</span>
+                    <ul>
+                        <li>Build a web based snake game,<br>where you can play the old<br>
+                            nostalgic snake game.</li><br>
+                        <li>Structured modular, maintainable codebases to enhance scalability, allowing seamless
+                            addition of new games and features in the future</li>
+                    </ul>
+                    <span class="tech-item">HTML</span>
+                    <span class="tech-item">CSS</span>
+                    <span class="tech-item">Java Script</span>
+                    <button id="snake-game" class="gitHub">
+                        <img src="project-image/images.png" alt="icon"
+                            style="width: 20px; height: 20px; vertical-align: middle;">
+                        GitHub Link
+                    </button>
+                </div>
+                <div class="project-grid">
+                    <img src="project-image/spotify.png" alt="game-image">
+                    <h3>Spotify Clown</h3>
+                    <span class="date">2024 | Bangalore, India</span>
+                    <ul>
+                        <li>Build a website that is a clown of spotify and can play micis of your choice.</li><br>
+                    </ul>
+                    <span class="tech-item">HTML</span>
+                    <span class="tech-item">CSS</span>
+                    <span class="tech-item">Java Script</span>
+                    <button id="spotify-clone" class="gitHub">
+                        <img src="project-image/images.png" alt="icon"
+                            style="width: 20px; height: 20px; vertical-align: middle;">
+                        GitHub Link
+                    </button>
+                </div>
+                <div class="project-grid">
+                    <img src="project-image/ems.png" alt="ems-image">
+                    <h3>Employee Management System Clown</h3>
+                    <span class="date">2025 | Bangalore, India</span>
+                    <ul>
+                        <li>It is a website that will be used to set the communication between Admin and the Employees.
+                        </li><br>
+                        <li>Here admin can assign task to the employees and employees can handle the tast with ease.
+                        </li>
+                    </ul>
+                    <span class="tech-item">React</span>
+                    <span class="tech-item">Talwind CSS</span>
+                    <button id="ems" class="gitHub">
+                        <img src="project-image/images.png" alt="icon"
+                            style="width: 20px; height: 20px; vertical-align: middle;">
+                        GitHub Link
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--Contact--->
+        <div id="contact">
+            <h1 class="contact-me">Contact Me</h1>
+            <div class="col2">
+                <div class="row2a">
+                    <div class="contact-item">
+                        <img src="svg/phone-solid.svg" alt="phone">
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <a href="">+917978258462</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <img src="svg/envelope-solid.svg" alt="email">
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <a href="mailto:ramansingh.bls@gmail.com.com">ramansingh.bls@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <img src="svg/github-brands.svg" alt="GitHub">
+                        <div class="contact-text">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/ramansingh10">github.com/ramansingh10</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <img src="svg/naukri.png" alt="Naukri">
+                        <div class="contact-text">
+                            <h3>Naukri</h3>
+                            <a href="https://www.naukri.com/mnjuser/homepage">naukri.com/mnjuser/home</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row2b">
+                    <form id="contactForm">
+                        <div class="tesm">
+                            <label for="name" class="name">Name</label>
+                            <input type="text" class="input" id="name" name="name" required />
+                        </div>
+
+                        <div class="tesm">
+                            <label for="email" class="name">Email</label>
+                            <input type="email" class="input" id="email" name="email" required />
+                        </div>
+
+                        <div class="tesm">
+                            <label for="subject" class="name">Subject</label>
+                            <input type="text" class="input" id="subject" name="subject" required />
+                        </div>
+
+                        <div class="tesm">
+                            <label for="message" class="name">Message</label>
+                            <textarea rows="8" cols="12" class="input-message" id="message" name="message"
+                                placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <div class="tesm">
+                            <button type="submit" id="submit">Submit</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h3 class="copyright">&#169; 2024 Raman Kumar Singh. All Rights Reserved.</h3>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+
+</html>
