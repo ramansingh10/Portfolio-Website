@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 app.use(cors({
-    origin:[process.env.FORNTEND_URL],
+    origin:[process.env.FRONTEND_URL],
     methods:["POST"],
     Credentials:true
 }))
