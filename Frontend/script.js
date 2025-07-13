@@ -76,7 +76,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
   };
   try {
     const response = await axios.post(
-      "https://your-backend-url.onrender.com/api/v1/details/send",
+      "https://portfolio-website-backend-zfzo.onrender.com/api/v1/details/send",
       formData
     );
     console.log("Server response:", response.data);
