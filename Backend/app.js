@@ -21,6 +21,6 @@ app.use('/api/v1/details', detailsRouter)
 
 dbConnection()
 
-app.listen(process.env.PORT,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log("Server runnig on port 3000")
 })
